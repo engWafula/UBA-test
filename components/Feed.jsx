@@ -3,17 +3,16 @@
 import { useState, useEffect } from "react";
 
 import PromptCard from "./PromptCard";
-
-const PromptCardList = ({ data, handleTagClick }) => {
+import ShortCuts from "./ShortCuts";
+import Chart from "./Chart";
+import CreditCard from "./CreditCards";
+const PromptCardList = () => {
   return (
-    <div className='mt-16 prompt_layout items-center '>
-      {data.map((post) => (
-        <PromptCard
-          key={post._id}
-          post={post}
-          handleTagClick={handleTagClick}
-        />
-      ))}
+    <div className='mt-0 prompt_layout items-center '>
+        <PromptCard/>
+        <ShortCuts/>
+        <Chart/>
+        <CreditCard/>
     </div>
   );
 };
@@ -69,26 +68,7 @@ const Feed = () => {
 
   return (
     <section className='feed'>
-      <form className='relative w-full flex-center'>
-        <input
-          type='text'
-          placeholder='Search for a tag or a username'
-          value={searchText}
-          onChange={handleSearchChange}
-          required
-          className='search_input peer'
-        />
-      </form>
-
-      {/* All Prompts */}
-      {searchText ? (
-        <PromptCardList
-          data={searchedResults}
-          handleTagClick={handleTagClick}
-        />
-      ) : (
         <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
-      )}
     </section>
   );
 };
