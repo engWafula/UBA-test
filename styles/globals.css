@@ -30,7 +30,6 @@
 
 .main:after {
   content: "";
-  background-image: url("/assets/images/grid.svg");
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -45,17 +44,6 @@
   z-index: 3;
   width: 100%;
   max-width: 640px;
-  background-image: radial-gradient(
-      at 27% 37%,
-      hsla(215, 98%, 61%, 1) 0px,
-      transparent 0%
-    ),
-    radial-gradient(at 97% 21%, rgb(44, 26, 149) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, rgb(87, 87, 235) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, rgb(20, 59, 150) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, rgb(33, 11, 122) 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;

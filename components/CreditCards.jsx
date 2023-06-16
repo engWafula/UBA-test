@@ -42,7 +42,7 @@ const CreditCard = () => {
                                 TUMUSIIME ABBY JAMES
                             </p>
                         </div>
-                        <img className="w-5 h-5" src="https://i.imgur.com/bbPHJVe.png"/>
+                         <img className="w-5 h-5" src="https://i.imgur.com/bbPHJVe.png"/> 
                     </div>
                     <div className="pt-1">
                         <p className="font-medium tracking-more-wider">
